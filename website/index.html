@@ -11,47 +11,126 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>Home</title>
-</head>
 
-<body>
-  <!-- nav bar start here -->
-  <nav class="navbar navbar-expand-lg header_bg">
-    <div class="container-fluid">
-      <a class="navbar-brand NAV_COLOR " href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item effect">
-            <a class="nav-link active NAV_COLOR nav_edit" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active NAV_COLOR nav_edit" aria-current="page" href="#">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active NAV_COLOR nav_edit" aria-current="page" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active NAV_COLOR nav_edit" aria-current="page" href="#">Feedback</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle NAV_COLOR nav_edit" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+<!-- ── Navbar Start ── -->
+<nav class="navbar navbar-expand-lg header_bg">
+  <div class="container-fluid">
+    <a class="navbar-brand NAV_COLOR" href="#">Navbar</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav align-items-lg-center">
+        
+        <!-- Blogs -->
+        <li class="nav-item">
+          <a class="nav-link active NAV_COLOR nav_edit" href="#">Blogs</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link active NAV_COLOR nav_edit" href="contact.html">Contact</a>
+        </li>
+
+        <!-- ── Custom Dropdown ── -->
+        <li class="nav-item">
+          <div class="custom-dropdown" id="mainDD">
+
+            <!-- Dropdown Button -->
+            <button class="custom-dropdown-toggle" onclick="toggleDD()">
+              <i class="ti ti-menu-2"></i>
               Shop
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+              <i class="ti ti-chevron-down arrow" id="chevron"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div class="custom-menu">
+
+              <!-- Option 1 -->
+              <div class="menu-item">
+                <span><i class="ti ti-home" style="margin-right:8px"></i>Refrigerators</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                  <a href="pelrefrigerators.html"><div class="sub-item">Pel</div></a>
+                  <a href="haier refrigerator.html"><div class="sub-item">Haier</div></a>
+                  <a href="refrigerator.html"><div class="sub-item">National</div></a>
+                 
+                  
+                </div>
+              </div>
+
+              <!-- Option 2 -->
+              <div class="menu-item">
+                <span><i class="ti ti-user" style="margin-right:8px"></i>LED</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                 <a href="samsung.html"> <div class="sub-item">Samsung</div></a>
+                 <a href="haier led.html"> <div class="sub-item">Haier</div></a>
+                </div>
+              </div>
+
+              <!-- Option 3 -->
+              <div class="menu-item">
+                <span><i class="ti ti-folder" style="margin-right:8px"></i>Fans</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                 <a href="orient fan.html"> <div class="sub-item">Orient</div></a>
+                </div>
+              </div>
+
+              <!-- Option 4 -->
+              <div class="menu-item">
+                <span><i class="ti ti-mail" style="margin-right:8px"></i>Geysers</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                  <a href="geyser.html"><div class="sub-item">National</div></a>
+                  <a href="orient geyser.html"><div class="sub-item">Orient</div></a>
+                </div>
+              </div>
+
+              <!-- Option 5 -->
+              <div class="menu-item">
+                <span><i class="ti ti-bell" style="margin-right:8px"></i>Air Coolers</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                  <a href="air cooler.html"><div class="sub-item">National</div></a>
+                  <a href="orient cooler.html"><div class="sub-item">Orient</div></a>
+                </div>
+              </div>
+
+              <!-- Option 6 -->
+              <div class="menu-item">
+                <span><i class="ti ti-chart-bar" style="margin-right:8px"></i>AC</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                 <a href="haier AC .html"> <div class="sub-item">Haier</div></a>
+                  <a href="dawlanceAC.html"><div class="sub-item">Dawlance</div></a>
+                </div>
+              </div>
+
+              <!-- Option 7 -->
+              <div class="menu-item">
+                <span><i class="ti ti-settings" style="margin-right:8px"></i>Washing Machine</span>
+                <i class="ti ti-arrow-right arrow"></i>
+                <div class="submenu">
+                  <a href="haier machine.html"><div class="sub-item">Haier</div></a>
+                  <a href="dawlanceWM.html"><div class="sub-item">Dawlance</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- ── Custom Dropdown End ── -->
+
+      </ul>
     </div>
-  </nav>
-  <!-- nav bar end here -->
+  </div>
+</nav>
+<!-- ── Navbar End ── -->
 
   <!-- banner section start here -->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -71,8 +150,8 @@
 
 
   <div class="img_1">
-   
     <!-- <img src="assets/img/refrigerator2.webp" class="img-fluid" alt=""> -->
+     <h1>hieir</h1>
   </div>
   <div class="img2">
     <!-- <img src="assets/img/Title_20.webp" class="img-fluid" alt=""> -->
@@ -90,8 +169,9 @@
 
   </div>
   <div class="img6">
-    <div data-aos="fade-up">
+    <div >
       <!-- <img src="assets/img/blender.webp" class="img-fluid" alt=""> -->
+       <h1></h1>
     </div>
 
 
@@ -101,6 +181,10 @@
     <!-- <img src="assets/img/iron.webp" class="img-fluid" alt=""> -->
 
   </div>
+
+
+
+  
   <!-- 2nd banner end here -->
 
   <!-- banner section end here -->
@@ -147,9 +231,6 @@
                   <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                  <a href="">Feedback</a>
-                </li>
-                <li>
                   <a href="">Shop</a>
                 </li>
               </ul>
@@ -180,7 +261,19 @@
       </div>
     </div>
   </section>
+
   <!-- footer end from here -->
+
+
+
+
+
+
+
+
+
+
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
@@ -199,6 +292,25 @@
       });
     });
   </script>
+
+  <script>
+  // Toggle dropdown open/close
+  function toggleDD() {
+    var dd = document.getElementById('mainDD');
+    var ch = document.getElementById('chevron');
+    dd.classList.toggle('open');
+    ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+
+  // Close when clicking outside
+  document.addEventListener('click', function(e) {
+    var dd = document.getElementById('mainDD');
+    if (!dd.contains(e.target)) {
+      dd.classList.remove('open');
+      document.getElementById('chevron').style.transform = 'rotate(0deg)';
+    }
+  });
+</script>
 </body>
 
 </html>
