@@ -2,224 +2,254 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Contact</title>
+  <title>Contact</title>
 </head>
 
 <body>
+  <!-- ── Navbar Start ── -->
+  <nav class="navbar navbar-expand-lg header_bg">
+    <div class="container-fluid">
+      <a href="index.html"><img src="assets/img/W__1_-removebg-preview.png" class="logo-img" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- ── Navbar Start ── -->
-<nav class="navbar navbar-expand-lg header_bg">
-  <div class="container-fluid">
-    <a class="navbar-brand NAV_COLOR" href="#">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-lg-center menu_opt mx-auto">
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">About</a>
+          </li>
+          <!-- Blogs -->
+          <li class="nav-item">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">Blogs</a>
+          </li>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <!-- Contact -->
+          <li class="nav-item addtocart_btn">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle " href="contact.html">Contact</a>
+          </li>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav align-items-lg-center">
-        
-        <!-- Blogs -->
-        <li class="nav-item">
-          <a class="nav-link active NAV_COLOR nav_edit" href="#">Blogs</a>
-        </li>
+          <!-- ── Custom Dropdown ── -->
+          <li class="nav-item">
+            <div class="custom-dropdown" id="mainDD">
 
-        <!-- Contact -->
-        <li class="nav-item">
-          <a class="nav-link active NAV_COLOR nav_edit" href="contact.html">Contact</a>
-        </li>
+              <!-- Dropdown Button -->
+              <button class="custom-dropdown-toggle" onclick="toggleDD()">
+                <i class="ti ti-menu-2"></i>
+                Shop
+                <i class="ti ti-chevron-down arrow" id="chevron"></i>
+              </button>
 
-        <!-- ── Custom Dropdown ── -->
-        <li class="nav-item">
-          <div class="custom-dropdown" id="mainDD">
+              <!-- Dropdown Menu -->
+              <div class="custom-menu">
 
-            <!-- Dropdown Button -->
-            <button class="custom-dropdown-toggle" onclick="toggleDD()">
-              <i class="ti ti-menu-2"></i>
-              Shop
-              <i class="ti ti-chevron-down arrow" id="chevron"></i>
-            </button>
+                <!-- Option 1 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-home" style="margin-right:8px"></i>Refrigerators</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="pelrefrigerators.html">
+                      <div class="sub-item">Pel</div>
+                    </a>
+                    <a href="haier refrigerator.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="refrigerator.html">
+                      <div class="sub-item">National</div>
+                    </a>
 
-            <!-- Dropdown Menu -->
-            <div class="custom-menu">
 
-              <!-- Option 1 -->
-              <div class="menu-item">
-                <span><i class="ti ti-home" style="margin-right:8px"></i>Refrigerators</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="pelrefrigerators.html"><div class="sub-item">Pel</div></a>
-                  <a href="haier refrigerator.html"><div class="sub-item">Haier</div></a>
-                  <a href="refrigerator.html"><div class="sub-item">National</div></a>
-                 
-                  
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 2 -->
-              <div class="menu-item">
-                <span><i class="ti ti-user" style="margin-right:8px"></i>LED</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="samsung.html"> <div class="sub-item">Samsung</div></a>
-                 <a href="haier led.html"> <div class="sub-item">Haier</div></a>
+                <!-- Option 2 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-user" style="margin-right:8px"></i>LED</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="samsung.html">
+                      <div class="sub-item">Samsung</div>
+                    </a>
+                    <a href="haier led.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 3 -->
-              <div class="menu-item">
-                <span><i class="ti ti-folder" style="margin-right:8px"></i>Fans</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="orient fan.html"> <div class="sub-item">Orient</div></a>
+                <!-- Option 3 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-folder" style="margin-right:8px"></i>Fans</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="orient fan.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 4 -->
-              <div class="menu-item">
-                <span><i class="ti ti-mail" style="margin-right:8px"></i>Geysers</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="geyser.html"><div class="sub-item">National</div></a>
-                  <a href="orient geyser.html"><div class="sub-item">Orient</div></a>
+                <!-- Option 4 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-mail" style="margin-right:8px"></i>Geysers</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="geyser.html">
+                      <div class="sub-item">National</div>
+                    </a>
+                    <a href="orient geyser.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 5 -->
-              <div class="menu-item">
-                <span><i class="ti ti-bell" style="margin-right:8px"></i>Air Coolers</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="air cooler.html"><div class="sub-item">National</div></a>
-                  <a href="orient cooler.html"><div class="sub-item">Orient</div></a>
+                <!-- Option 5 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-bell" style="margin-right:8px"></i>Air Coolers</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="air cooler.html">
+                      <div class="sub-item">National</div>
+                    </a>
+                    <a href="orient cooler.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 6 -->
-              <div class="menu-item">
-                <span><i class="ti ti-chart-bar" style="margin-right:8px"></i>AC</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="haier AC .html"> <div class="sub-item">Haier</div></a>
-                  <a href="dawlanceAC.html"><div class="sub-item">Dawlance</div></a>
+                <!-- Option 6 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-chart-bar" style="margin-right:8px"></i>AC</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="haier AC .html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="dawlanceAC.html">
+                      <div class="sub-item">Dawlance</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 7 -->
-              <div class="menu-item">
-                <span><i class="ti ti-settings" style="margin-right:8px"></i>Washing Machine</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="haier machine.html"><div class="sub-item">Haier</div></a>
-                  <a href="dawlanceWM.html"><div class="sub-item">Dawlance</div></a>
+                <!-- Option 7 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-settings" style="margin-right:8px"></i>Washing Machine</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="haier machine.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="dawlanceWM.html">
+                      <div class="sub-item">Dawlance</div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <!-- ── Custom Dropdown End ── -->
+          </li>
+          <!-- ── Custom Dropdown End ── -->
 
-      </ul>
+        </ul>
+
+      </div>
     </div>
-  </div>
-</nav>
-<!-- ── Navbar End ── -->
 
-    <!-- contact section start here -->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="contact_head">
-                    <h1>
-                        CONTACT
-                    </h1>
-                </div>
-                <!-- CARD 1 -->
-                <DIV class="col-lg-3 card_decor">
-                    <div class="">
-                        <a href="#" class="contact_icon"><i class="fa-solid fa-headset"></i></a>
-                        <br>
-                        <h5 class="options">
-                            CUSTOMER SERVICE
-                        </h5>
-                        <p class="contact_text">
-                            Get instant support via Custom Care representative.
-                        </p>
-                        <br>
-                        <a href="" class="btn_contact"> <button type="button">0444278976</button></a>
-                    </div>
-                </DIV>
-                <!-- CARD 2 -->
-                <DIV class="col-lg-3 card_decor">
-                    <div>
-                        <a href="https://www.whatsapp.com/" class="contact_icon"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <br>
-                        <h5 class="options">
-                            WHATSAPP
-                        </h5>
-                        <p class="contact_text">
-                            Support team is available from Monday to Saturday.
-                        </p>
-                        <br>
-                        <a href="https://www.whatsapp.com/" class="btn_contact"><button type="button">0444278976</button></a>
-                    </div>
-                </DIV>
-                <!-- CARD 3 -->
-                <DIV class="col-lg-3 card_decor">
-                    <div>
-                        <a href="https://workspace.google.com/gmail/" class="contact_icon"><i
-                                class="fa-regular fa-envelope"></i></a>
-                        <br>
-                        <h5 class="options">
-                            COMPLAINTS
-                        </h5>
-                        <p class="contact_text">
-                            Register your complaint <br>& get instant support.
-                        </p>
-                        <br>
-
-                        <a href="https://workspace.google.com/gmail/" class="btn_contact"><button type="button">0444278976</button></a>
-                    </div>
-                </DIV>
-                <!-- CARD 4 -->
-                <DIV class="col-lg-3 card_decor">
-                    <div>
-                        <a href="https://www.instagram.com/" class="contact_icon"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <br>
-                        <h5 class="options">
-                            FOLLOW US
-                        </h5>
-                        <p class="contact_text">
-                            Follow us on Instagram to get latest updates.
-                        </p>
-                        <br>
-                        <a href="https://www.instagram.com/" class="btn_contact"> <button type="button">CLICK</button></a>
-                    </div>
-                </DIV>
-
-            </div>
+    <a class="addtocart_btn" href="add to cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="addtocart_btn" href="#"><i class="fa-solid fa-circle-user"></i></a>
+  </nav>
+  <!-- ── Navbar End ── -->
+  <!-- contact section start here -->
+  <section>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="contact_head ">
+          <h1>
+            CONTACT
+          </h1>
         </div>
-    </section>
-    <!-- contact section end here -->
+        <!-- CARD 1 -->
+        <DIV class="col-lg-3 card_decor">
+          <div class="">
+            <a href="#" class="contact_icon"><i class="fa-solid fa-headset"></i></a>
+            <br>
+            <h5 class="options">
+              CUSTOMER SERVICE
+            </h5>
+            <p class="contact_text">
+              Get instant support via Custom Care representative.
+            </p>
+            <br>
+            <a href="" class="btn_contact"> <button type="button">0444278976</button></a>
+          </div>
+        </DIV>
+        <!-- CARD 2 -->
+        <DIV class="col-lg-3 card_decor">
+          <div>
+            <a href="https://www.whatsapp.com/" class="contact_icon"><i class="fa-brands fa-whatsapp"></i></a>
+            <br>
+            <h5 class="options">
+              WHATSAPP
+            </h5>
+            <p class="contact_text">
+              Support team is available from Monday to Saturday.
+            </p>
+            <br>
+            <a href="https://www.whatsapp.com/" class="btn_contact"><button type="button">0444278976</button></a>
+          </div>
+        </DIV>
+        <!-- CARD 3 -->
+        <DIV class="col-lg-3 card_decor">
+          <div>
+            <a href="https://workspace.google.com/gmail/" class="contact_icon"><i
+                class="fa-regular fa-envelope"></i></a>
+            <br>
+            <h5 class="options">
+              COMPLAINTS
+            </h5>
+            <p class="contact_text">
+              Register your complaint <br>& get instant support.
+            </p>
+            <br>
+
+            <a href="https://workspace.google.com/gmail/" class="btn_contact"><button
+                type="button">0444278976</button></a>
+          </div>
+        </DIV>
+        <!-- CARD 4 -->
+        <DIV class="col-lg-3 card_decor">
+          <div>
+            <a href="https://www.instagram.com/" class="contact_icon"><i class="fa-brands fa-instagram"></i></a>
+            <br>
+            <h5 class="options">
+              FOLLOW US
+            </h5>
+            <p class="contact_text">
+              Follow us on Instagram to get latest updates.
+            </p>
+            <br>
+            <a href="https://www.instagram.com/" class="btn_contact"> <button type="button">CLICK</button></a>
+          </div>
+        </DIV>
+
+      </div>
+    </div>
+  </section>
+  <!-- contact section end here -->
 
 
 
 
 
-   <!-- footer satrt from here -->
+  <!-- footer satrt from here -->
 
   <section>
     <div class="container-fluid">
@@ -248,10 +278,12 @@
             <h3 class="heading">Our Pages</h3>
             <br>
             <div class="point">
-
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="">About</a>
                 </li>
                 <li>
                   <a href="">Blogs</a>
@@ -259,9 +291,7 @@
                 <li>
                   <a href="contact.html">Contact</a>
                 </li>
-                <li>
-                  <a href="">Shop</a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -323,23 +353,23 @@
   </script>
 
   <script>
-  // Toggle dropdown open/close
-  function toggleDD() {
-    var dd = document.getElementById('mainDD');
-    var ch = document.getElementById('chevron');
-    dd.classList.toggle('open');
-    ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
-  }
-
-  // Close when clicking outside
-  document.addEventListener('click', function(e) {
-    var dd = document.getElementById('mainDD');
-    if (!dd.contains(e.target)) {
-      dd.classList.remove('open');
-      document.getElementById('chevron').style.transform = 'rotate(0deg)';
+    // Toggle dropdown open/close
+    function toggleDD() {
+      var dd = document.getElementById('mainDD');
+      var ch = document.getElementById('chevron');
+      dd.classList.toggle('open');
+      ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
     }
-  });
-</script>
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+      var dd = document.getElementById('mainDD');
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        document.getElementById('chevron').style.transform = 'rotate(0deg)';
+      }
+    });
+  </script>
 </body>
 
 </html>

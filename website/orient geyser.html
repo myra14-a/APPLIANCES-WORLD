@@ -2,230 +2,262 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Products</title>
+  <title>Products</title>
 </head>
 
 <body>
 
-   <!-- ── Navbar Start ── -->
-<nav class="navbar navbar-expand-lg header_bg">
-  <div class="container-fluid">
-    <a class="navbar-brand NAV_COLOR" href="#">Navbar</a>
+  <!-- ── Navbar Start ── -->
+  <nav class="navbar navbar-expand-lg header_bg">
+    <div class="container-fluid">
+      <a href="index.html"><img src="assets/img/W__1_-removebg-preview.png" class="logo-img" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-lg-center menu_opt mx-auto">
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">About</a>
+          </li>
+          <!-- Blogs -->
+          <li class="nav-item">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">Blogs</a>
+          </li>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav align-items-lg-center">
-        
-        <!-- Blogs -->
-        <li class="nav-item">
-          <a class="nav-link active NAV_COLOR nav_edit" href="#">Blogs</a>
-        </li>
+          <!-- Contact -->
+          <li class="nav-item addtocart_btn">
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle " href="contact.html">Contact</a>
+          </li>
 
-        <!-- Contact -->
-        <li class="nav-item">
-          <a class="nav-link active NAV_COLOR nav_edit" href="contact.html">Contact</a>
-        </li>
+          <!-- ── Custom Dropdown ── -->
+          <li class="nav-item">
+            <div class="custom-dropdown" id="mainDD">
 
-        <!-- ── Custom Dropdown ── -->
-        <li class="nav-item">
-          <div class="custom-dropdown" id="mainDD">
+              <!-- Dropdown Button -->
+              <button class="custom-dropdown-toggle" onclick="toggleDD()">
+                <i class="ti ti-menu-2"></i>
+                Shop
+                <i class="ti ti-chevron-down arrow" id="chevron"></i>
+              </button>
 
-            <!-- Dropdown Button -->
-            <button class="custom-dropdown-toggle" onclick="toggleDD()">
-              <i class="ti ti-menu-2"></i>
-              Shop
-              <i class="ti ti-chevron-down arrow" id="chevron"></i>
-            </button>
+              <!-- Dropdown Menu -->
+              <div class="custom-menu">
 
-            <!-- Dropdown Menu -->
-            <div class="custom-menu">
+                <!-- Option 1 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-home" style="margin-right:8px"></i>Refrigerators</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="pelrefrigerators.html">
+                      <div class="sub-item">Pel</div>
+                    </a>
+                    <a href="haier refrigerator.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="refrigerator.html">
+                      <div class="sub-item">National</div>
+                    </a>
 
-              <!-- Option 1 -->
-              <div class="menu-item">
-                <span><i class="ti ti-home" style="margin-right:8px"></i>Refrigerators</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="pelrefrigerators.html"><div class="sub-item">Pel</div></a>
-                  <a href="haier refrigerator.html"><div class="sub-item">Haier</div></a>
-                  <a href="refrigerator.html"><div class="sub-item">National</div></a>
-                 
-                  
+
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 2 -->
-              <div class="menu-item">
-                <span><i class="ti ti-user" style="margin-right:8px"></i>LED</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="samsung.html"> <div class="sub-item">Samsung</div></a>
-                 <a href="haier led.html"> <div class="sub-item">Haier</div></a>
+                <!-- Option 2 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-user" style="margin-right:8px"></i>LED</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="samsung.html">
+                      <div class="sub-item">Samsung</div>
+                    </a>
+                    <a href="haier led.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 3 -->
-              <div class="menu-item">
-                <span><i class="ti ti-folder" style="margin-right:8px"></i>Fans</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="orient fan.html"> <div class="sub-item">Orient</div></a>
+                <!-- Option 3 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-folder" style="margin-right:8px"></i>Fans</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="orient fan.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 4 -->
-              <div class="menu-item">
-                <span><i class="ti ti-mail" style="margin-right:8px"></i>Geysers</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="geyser.html"><div class="sub-item">National</div></a>
-                  <a href="orient geyser.html"><div class="sub-item">Orient</div></a>
+                <!-- Option 4 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-mail" style="margin-right:8px"></i>Geysers</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="geyser.html">
+                      <div class="sub-item">National</div>
+                    </a>
+                    <a href="orient geyser.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 5 -->
-              <div class="menu-item">
-                <span><i class="ti ti-bell" style="margin-right:8px"></i>Air Coolers</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="air cooler.html"><div class="sub-item">National</div></a>
-                  <a href="orient cooler.html"><div class="sub-item">Orient</div></a>
+                <!-- Option 5 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-bell" style="margin-right:8px"></i>Air Coolers</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="air cooler.html">
+                      <div class="sub-item">National</div>
+                    </a>
+                    <a href="orient cooler.html">
+                      <div class="sub-item">Orient</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 6 -->
-              <div class="menu-item">
-                <span><i class="ti ti-chart-bar" style="margin-right:8px"></i>AC</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                 <a href="haier AC .html"> <div class="sub-item">Haier</div></a>
-                  <a href="dawlanceAC.html"><div class="sub-item">Dawlance</div></a>
+                <!-- Option 6 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-chart-bar" style="margin-right:8px"></i>AC</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="haier AC .html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="dawlanceAC.html">
+                      <div class="sub-item">Dawlance</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Option 7 -->
-              <div class="menu-item">
-                <span><i class="ti ti-settings" style="margin-right:8px"></i>Washing Machine</span>
-                <i class="ti ti-arrow-right arrow"></i>
-                <div class="submenu">
-                  <a href="haier machine.html"><div class="sub-item">Haier</div></a>
-                  <a href="dawlanceWM.html"><div class="sub-item">Dawlance</div></a>
+                <!-- Option 7 -->
+                <div class="menu-item">
+                  <span><i class="ti ti-settings" style="margin-right:8px"></i>Washing Machine</span>
+                  <i class="ti ti-arrow-right arrow"></i>
+                  <div class="submenu">
+                    <a href="haier machine.html">
+                      <div class="sub-item">Haier</div>
+                    </a>
+                    <a href="dawlanceWM.html">
+                      <div class="sub-item">Dawlance</div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <!-- ── Custom Dropdown End ── -->
+          </li>
+          <!-- ── Custom Dropdown End ── -->
 
-      </ul>
+        </ul>
+
+      </div>
     </div>
-  </div>
-</nav>
-<!-- ── Navbar End ── -->
+
+    <a class="addtocart_btn" href="add to cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="addtocart_btn" href="#"><i class="fa-solid fa-circle-user"></i></a>
+  </nav>
+  <!-- ── Navbar End ── -->
+  <div class="card_bg">
 
     <DIV class="product_head">
+      <div data-aos="fade-left">
         <h1>
-
-            ORIENT GEYSER
-
+          ORIENT GEYSER
         </h1>
+      </div>
     </DIV>
 
     <div class="cards-grid">
 
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="assets/img/orient geyser.jpeg" alt="Refrigerators" />
-            <div class="card-body">
-                <div class="card-line"></div>
-                <span class="card-category">Orient</span>
-                <h2 class="card-title">Semi Electric Geyser 20 Littre 
-                </h2>
-                <p class="card-sub">Rs.21,900.00
-                </p>
-                <a class="card-btn" href="#">Shop Now</a>
-            </div>
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="assets/img/orient geyser.jpeg" alt="Refrigerators" />
+        <div class="card-body">
+          <div class="card-line"></div>
+          <span class="card-category">Orient</span>
+          <h2 class="card-title">Semi Electric Geyser 20 Littre
+          </h2>
+          <p class="card-sub">Rs.21,900.00
+          </p>
+          <a class="card-btn" href="#">Shop Now</a>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="assets/img/orient geyser2.jpeg" alt="Deep Freezers" />
-            <div class="card-body">
-                <div class="card-line"></div>
-                <span class="card-category">Orient</span>
-                <h2 class="card-title">Semi Electric Geyser 20 Littre [DIGITAL] 
-                </h2>
-                <p class="card-sub">Rs.22,900.00
-                </p>
-                <a class="card-btn" href="#">Shop Now</a>
-            </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="assets/img/orient geyser2.jpeg" alt="Deep Freezers" />
+        <div class="card-body">
+          <div class="card-line"></div>
+          <span class="card-category">Orient</span>
+          <h2 class="card-title">Semi Electric Geyser 20 Littre [DIGITAL]
+          </h2>
+          <p class="card-sub">Rs.22,900.00
+          </p>
+          <a class="card-btn" href="#">Shop Now</a>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="assets/img/orient geyser3.jpeg" alt="Irons" />
-            <div class="card-body">
-                <div class="card-line"></div>
-                <span class="card-category">Orient</span>
-                <h2 class="card-title">Orient Electric Geyser 36 Littre
-                    D</h2>
-                <p class="card-sub">Rs.25,000.00
-                </p>
-                <a class="card-btn" href="#">Shop Now</a>
-            </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="assets/img/orient geyser3.jpeg" alt="Irons" />
+        <div class="card-body">
+          <div class="card-line"></div>
+          <span class="card-category">Orient</span>
+          <h2 class="card-title">Orient Electric Geyser 36 Littre
+            D</h2>
+          <p class="card-sub">Rs.25,000.00
+          </p>
+          <a class="card-btn" href="#">Shop Now</a>
         </div>
+      </div>
 
-        <!-- Card 4 -->
-        <div class="card">
-            <img src="assets/img/orient geyser4.jpeg" alt="Blenders" />
-            <div class="card-body">
-                <div class="card-line"></div>
-                <span class="card-category">Orient</span>
-                <h2 class="card-title">Orient Electric + Gas Geyser 30 Gallon
-                </h2>
-                <p class="card-sub">Rs.50,000.00
-                </p>
-                <a class="card-btn" href="#">Shop Now</a>
-            </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="assets/img/orient geyser4.jpeg" alt="Blenders" />
+        <div class="card-body">
+          <div class="card-line"></div>
+          <span class="card-category">Orient</span>
+          <h2 class="card-title">Orient Electric + Gas Geyser 30 Gallon
+          </h2>
+          <p class="card-sub">Rs.50,000.00
+          </p>
+          <a class="card-btn" href="#">Shop Now</a>
         </div>
+      </div>
 
-        <!-- Card 5 -->
-        <div class="card">
-            <img src="assets/img/orient-electric-with-gas-geyser-instant-hot-water-energy-efficient-heating-solution-image-0-1727341307.jpg" alt="Geysers" />
-            <div class="card-body">
-                <div class="card-line"></div>
-                <span class="card-category">Orient</span>
-                <h2 class="card-title">Orient Electric + Gas Geyser 40 Littre
-                </h2>
-                <p class="card-sub">Rs.34,000.00
-                </p>
-                <a class="card-btn" href="#">Shop Now</a>
-            </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img
+          src="assets/img/orient-electric-with-gas-geyser-instant-hot-water-energy-efficient-heating-solution-image-0-1727341307.jpg"
+          alt="Geysers" />
+        <div class="card-body">
+          <div class="card-line"></div>
+          <span class="card-category">Orient</span>
+          <h2 class="card-title">Orient Electric + Gas Geyser 40 Littre
+          </h2>
+          <p class="card-sub">Rs.34,000.00
+          </p>
+          <a class="card-btn" href="#">Shop Now</a>
         </div>
-
-
-
-
-
+      </div>
     </div>
 
 
+  </div>
 
 
-   <!-- footer satrt from here -->
+  <!-- footer satrt from here -->
 
   <section>
     <div class="container-fluid">
@@ -254,10 +286,12 @@
             <h3 class="heading">Our Pages</h3>
             <br>
             <div class="point">
-
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="">About</a>
                 </li>
                 <li>
                   <a href="">Blogs</a>
@@ -265,9 +299,7 @@
                 <li>
                   <a href="contact.html">Contact</a>
                 </li>
-                <li>
-                  <a href="">Shop</a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -329,23 +361,23 @@
   </script>
 
   <script>
-  // Toggle dropdown open/close
-  function toggleDD() {
-    var dd = document.getElementById('mainDD');
-    var ch = document.getElementById('chevron');
-    dd.classList.toggle('open');
-    ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
-  }
-
-  // Close when clicking outside
-  document.addEventListener('click', function(e) {
-    var dd = document.getElementById('mainDD');
-    if (!dd.contains(e.target)) {
-      dd.classList.remove('open');
-      document.getElementById('chevron').style.transform = 'rotate(0deg)';
+    // Toggle dropdown open/close
+    function toggleDD() {
+      var dd = document.getElementById('mainDD');
+      var ch = document.getElementById('chevron');
+      dd.classList.toggle('open');
+      ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
     }
-  });
-</script>
-</body>
-</html>
 
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+      var dd = document.getElementById('mainDD');
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        document.getElementById('chevron').style.transform = 'rotate(0deg)';
+      }
+    });
+  </script>
+</body>
+
+</html>
