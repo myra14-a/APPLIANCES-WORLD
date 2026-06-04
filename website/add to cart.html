@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Add To Cart</title>
 </head>
+
 <body>
 
-    <!-- ── Navbar Start ── -->
+  <!-- ── Navbar Start ── -->
   <nav class="navbar navbar-expand-lg header_bg">
     <div class="container-fluid">
       <a href="index.html"><img src="assets/img/W__1_-removebg-preview.png" class="logo-img" alt=""></a>
@@ -24,7 +32,7 @@
           </li>
           <!-- Blogs -->
           <li class="nav-item">
-            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">Blogs</a>
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="blogs page.html">Blogs</a>
           </li>
 
           <!-- Contact -->
@@ -39,7 +47,7 @@
               <!-- Dropdown Button -->
               <button class="custom-dropdown-toggle" onclick="toggleDD()">
                 <i class="ti ti-menu-2"></i>
-                Shop
+                SHOP
                 <i class="ti ti-chevron-down arrow" id="chevron"></i>
               </button>
 
@@ -156,14 +164,14 @@
     </div>
 
     <a class="addtocart_btn" href="add to cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-    <a class="addtocart_btn" href="#"><i class="fa-solid fa-circle-user"></i></a>
+    <a class="addtocart_btn" href="login.html"><i class="fa-solid fa-circle-user"></i></a>
   </nav>
   <!-- ── Navbar End ── -->
-    <h1>add to cart</h1>
+  <h1>add to cart</h1>
 
 
 
-    
+
   <!-- footer satrt from here -->
 
   <section>
@@ -238,6 +246,43 @@
   </section>
 
   <!-- footer end from here -->
+<script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+    AOS.init();
+
+    $(document).ready(function () {
+      $(".slick-list").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+      });
+    });
+  </script>
+
+  <script>
+    // Toggle dropdown open/close
+    function toggleDD() {
+      var dd = document.getElementById('mainDD');
+      var ch = document.getElementById('chevron');
+      dd.classList.toggle('open');
+      ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+      var dd = document.getElementById('mainDD');
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        document.getElementById('chevron').style.transform = 'rotate(0deg)';
+      }
+    });
+  </script>
 </body>
+
 </html>

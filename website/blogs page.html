@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <title>NATIONAL AIR COOLER</title>
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="assets/css/bootsrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Home</title>
 
 <body>
-   <!-- ── Navbar Start ── -->
+  <!-- ── Navbar Start ── -->
   <nav class="navbar navbar-expand-lg header_bg">
     <div class="container-fluid">
       <a href="index.html"><img src="assets/img/W__1_-removebg-preview.png" class="logo-img" alt=""></a>
@@ -32,7 +30,7 @@
           </li>
           <!-- Blogs -->
           <li class="nav-item">
-            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="#">Blogs</a>
+            <a class="nav-link active NAV_COLOR nav_edit custom-dropdown-toggle" href="blogs page.html">Blogs</a>
           </li>
 
           <!-- Contact -->
@@ -47,7 +45,7 @@
               <!-- Dropdown Button -->
               <button class="custom-dropdown-toggle" onclick="toggleDD()">
                 <i class="ti ti-menu-2"></i>
-                Shop
+                SHOP
                 <i class="ti ti-chevron-down arrow" id="chevron"></i>
               </button>
 
@@ -60,7 +58,7 @@
                   <i class="ti ti-arrow-right arrow"></i>
                   <div class="submenu">
                     <a href="pelrefrigerators.html">
-                      <div class="sub-item">Pel</div>
+                      <div class="sub-item ">Pel</div>
                     </a>
                     <a href="haier refrigerator.html">
                       <div class="sub-item">Haier</div>
@@ -164,9 +162,40 @@
     </div>
 
     <a class="addtocart_btn" href="add to cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-    <a class="addtocart_btn" href="#"><i class="fa-solid fa-circle-user"></i></a>
+    <a class="addtocart_btn" href="login.html"><i class="fa-solid fa-circle-user"></i></a>
   </nav>
+
   <!-- ── Navbar End ── -->
+
+
+
+   
+
+<!-- HERO -->
+<section class="hero ">
+  <div class="hero-bg"></div>
+  <div class="hero-img"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Welcome to</span>
+    <h1>The Appliance Blog</h1>
+    <p>Sharing recipes, lifestyle tips and all things appliances!</p>
+    <a href="#blogs" class="btn">Read Our Latest Blog Posts</a>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<div class="section-label" id="blogs ">
+  <span class="tag">Our Blogs</span>
+  <h2>Latest News & Blogs</h2>
+</div>
+
+<div class="blog-section">
+  <div class="blog-grid" id="blog-grid"></div>
+</div>
+
+
+
+
 
   <!-- footer satrt from here -->
 
@@ -263,23 +292,121 @@
   </script>
 
   <script>
-  // Toggle dropdown open/close
-  function toggleDD() {
-    var dd = document.getElementById('mainDD');
-    var ch = document.getElementById('chevron');
-    dd.classList.toggle('open');
-    ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
-  }
-
-  // Close when clicking outside
-  document.addEventListener('click', function(e) {
-    var dd = document.getElementById('mainDD');
-    if (!dd.contains(e.target)) {
-      dd.classList.remove('open');
-      document.getElementById('chevron').style.transform = 'rotate(0deg)';
+    // Toggle dropdown open/close
+    function toggleDD() {
+      var dd = document.getElementById('mainDD');
+      var ch = document.getElementById('chevron');
+      dd.classList.toggle('open');
+      ch.style.transform = dd.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
     }
-  });
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+      var dd = document.getElementById('mainDD');
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        document.getElementById('chevron').style.transform = 'rotate(0deg)';
+      }
+    });
+  </script>
+
+  
+<script>
+const posts = [
+  {
+    cat: "LAUNDRY", date: "19/05/2026",
+    title: "Heat Pump Dryers Explained — Are They Worth It?",
+    excerpt: "Tumble dryers have come a long way. If you've been shopping recently, you've noticed that heat pump dryers are everywhere — and they cost noticeably more than a standard condenser model.",
+    img: "https://theappliance.blog/wp-content/uploads/2026/05/heat-pump-dryer.jpg"
+  },
+  {
+    cat: "ORGANISATION", date: "30/04/2026",
+    title: "Spring Laundry: How to Refresh Your Home Ready for Summer",
+    excerpt: "Spring is the perfect excuse to get on top of the laundry jobs you've been putting off all winter. Heavier bedding, curtains that haven't moved since October...",
+    img: "https://theappliance.blog/wp-content/uploads/2026/04/Spring-Laundry.jpg"
+  },
+  {
+    cat: "EASTER RECIPES", date: "17/03/2026",
+    title: "Ideas for a Relaxed Easter at Home",
+    excerpt: "Easter is a wonderful time to gather with family and enjoy a relaxed day at home. Whether you're hosting Easter lunch, planning an egg hunt or simply creating a beautiful table...",
+    img: "https://theappliance.blog/wp-content/uploads/2026/03/Easter-The-Appliance-Blog.jpg"
+  },
+  {
+    cat: "RECIPES", date: "17/03/2026",
+    title: "Roasted Lamb with Mint Sauce – A Classic Easter Recipe",
+    excerpt: "If you're planning a traditional Easter meal, roasted lamb with mint sauce is a timeless choice. This simple yet flavourful recipe combines tender rack of lamb with fresh herb mint sauce.",
+    img: "https://theappliance.blog/wp-content/uploads/2026/03/24403470_Lamb_with_mint_sauce-step-4-16x9-1.webp"
+  },
+  {
+    cat: "RECIPES", date: "17/03/2026",
+    title: "Braided Easter Bread with Pistachio and Cranberry Filling",
+    excerpt: "This braided Easter bread is a festive bake with soft, lightly sweet dough combining a rich pistachio and cranberry filling with fresh citrus flavour.",
+    img: "https://theappliance.blog/wp-content/uploads/2026/03/download.jpg"
+  },
+  {
+    cat: "RECIPES", date: "04/03/2026",
+    title: "Mushroom Tart with Fresh Herbs – Recipe",
+    excerpt: "If you're looking for an elegant dish that's simple to prepare yet full of flavour, this mushroom tart is the perfect choice. With crisp pastry and a rich mushroom filling.",
+    img: "https://theappliance.blog/wp-content/uploads/2026/03/20569222_mushroom-tarte_step6_1800x1011.webp"
+  },
+  {
+    cat: "INTEGRATED ADVICE", date: "26/02/2026",
+    title: "Integrated Appliances: What Installers Wish Customers Knew Before Buying",
+    excerpt: "Integrated appliances can look fantastic in a finished kitchen. Clean lines, hidden appliances, everything neatly behind cabinet doors. But from an installer's point of view...",
+    img: "https://theappliance.blog/wp-content/uploads/2026/02/The-Appliance-Blog-copy.jpg"
+  },
+  {
+    cat: "COOKING", date: "26/01/2026",
+    title: "13 Amp vs Hardwired Hobs: What's the Difference?",
+    excerpt: "Not sure if your new hob needs plugging in or hardwiring? You're not alone. The most common questions we hear in appliance showrooms are all about 13 Amp vs Hardwired hobs.",
+    img: "https://theappliance.blog/wp-content/uploads/2026/01/13-Amp-vs-Hardwired-Hobs-Whats-the-Difference-And-Which-Do-You-Need-copy.jpg"
+  },
+  {
+    cat: "TIPS", date: "03/01/2026",
+    title: "Energy-Efficient Appliances in Winter: What Actually Saves Money?",
+    excerpt: "As winter sets in and energy use naturally increases, many households start looking for ways to reduce running costs. Appliances play a bigger role in winter energy bills than most people realise.",
+    img: "https://theappliance.blog/wp-content/uploads/2025/12/Energy-Efficient-Appliances-in-Winter-What-Actually-Saves-Money-1-copy.jpg"
+  },
+  {
+    cat: "COOKING", date: "09/12/2025",
+    title: "Double Oven Availability in the UK: What We're Seeing",
+    excerpt: "If you're currently searching for a double oven, you may have noticed that availability feels more restricted than it used to be. Fewer models, longer lead times...",
+    img: "https://theappliance.blog/wp-content/uploads/2025/12/download.jpg"
+  },
+  {
+    cat: "ORGANISATION", date: "12/11/2025",
+    title: "Get Your Kitchen Ready for Christmas",
+    excerpt: "Make sure your kitchen's ready for the festive rush. The Christmas season is all about good food, family, and festive cheer — but the last thing anyone wants is a broken oven.",
+    img: "https://theappliance.blog/wp-content/uploads/2025/11/Ruislip-Appliance-Ltd-copy.jpg"
+  },
+  {
+    cat: "NEWS", date: "09/10/2025",
+    title: "Tully's Joins the Ruislip Appliances Group",
+    excerpt: "We're delighted to announce that Tully's Appliances has officially joined the Ruislip Appliances Group, which now includes Ruislip Appliances, Buyers and Sellers, Hot & Cold, and now Tully's.",
+    img: "https://theappliance.blog/wp-content/uploads/2025/10/IMG_6107-copy-scaled.jpeg"
+  }
+];
+
+const grid = document.getElementById('blog-grid');
+posts.forEach(post => {
+  grid.innerHTML += `
+    <article class="card">
+      <div class="card-img">
+        <img src="${post.img}" alt="${post.title}" loading="lazy" onerror="this.parentElement.style.background='#e8e2d8'" />
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">${post.cat}</span>
+          <span class="card-date">${post.date}</span>
+        </div>
+        <h3>${post.title}</h3>
+        <p>${post.excerpt}</p>
+      </div>
+      <div class="card-footer">Read More →</div>
+    </article>`;
+});
 </script>
 </body>
 
 </html>
+

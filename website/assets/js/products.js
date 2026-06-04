@@ -68,7 +68,7 @@ const products = [
     price: "RS.174,999",
     image: "assets/img/samsung led 2.jpg",
     description: "Samsung 50 UHD smart LED TV 50DU8000"
-  }, 
+  },
   {
     id: 11,
     name: "Samsung",
@@ -118,7 +118,7 @@ const products = [
     image: "assets/img/dawlance ac 1.webp",
     description: "Invertor Ac 1.5 Ton Enercon-30"
   },
-{
+  {
     id: 18,
     name: "DAWLANCE",
     price: "RS.160,000",
@@ -224,157 +224,237 @@ const products = [
     description: "DWT 270 C LVS+ top Load Washing Machine"
   },
   {
-   id: 33,
+    id: 33,
     name: "NATIONAL",
     price: "Rs.27,900.00",
     image: "assets/img/natl cooloer 1.webp",
     description: "Air Cooler NAC-4200"
   },
-   {
-   id: 34,
+  {
+    id: 34,
     name: "NATIONAL",
     price: "Rs.33,000.00",
     image: "assets/img/natl cooloer 2.webp",
     description: "Air cooler NAC-6500"
   },
-   {
-   id: 35,
+  {
+    id: 35,
     name: "NATIONAL",
     price: "Rs.30,500.00",
     image: "assets/img/natl iron 3.webp",
     description: "Air Cooler NAC-5100"
   },
   {
-   id:36 ,
+    id: 36,
     name: "National",
     price: "Rs.19,000.00",
     image: "assets/img/natl geyser2.webp",
     description: "GEYSER NEWH-11000"
   },
   {
-   id: 37,
+    id: 37,
     name: "National",
     price: "Rs.26,500.00",
     image: "assets/img/natl geyser3.webp",
     description: "GEYSER NEWH-32000"
   },
   {
-   id: 38,
+    id: 38,
     name: "National",
     price: "Rs.49,000.00",
     image: "assets/img/natl geyser4.webp",
     description: "Geyser NG-2035 EG"
   },
   {
-   id: 39,
+    id: 39,
     name: "National",
     price: "Rs.44,000.00",
     image: "assets/img/natl geyser5.webp",
     description: "Geyser NG-2035 EG"
   },
   {
-   id: 40,
+    id: 40,
     name: "National",
     price: "Rs.18,500.00",
     image: "assets/img/national geyser 1.webp",
     description: "Instant Geyser NWH-207 NG"
   },
   {
-   id: 41 ,
+    id: 41,
     name: "Haier",
     price: "Rs.194,000",
     image: "assets/img/Haier AC.jpeg",
     description: "Haier 2 Ton Inverter AC HSU-24HFCD"
   },
   {
-   id: 42,
+    id: 42,
     name: "Haier",
     price: "Rs.177,000",
     image: "assets/img/HAIER AC 2.jpeg",
     description: "Haier HSU-18HFTCA Thunder Inverter Air Conditioner"
   },
   {
-   id: 43,
+    id: 43,
     name: "Haier",
     price: "Rs.137,000",
     image: "assets/img/haier ac 3.jpeg",
     description: "Haier Pearl PRO Inverter Series 1.5 ton Heat & Cool ac HSU-19HFPA"
   },
   {
-   id: 44,
+    id: 44,
     name: "Haier",
     price: "Rs.150,000",
     image: "assets/img/haier AC 4.JPEG",
     description: "Haier 1.6 Ton UltimateCool Inverter Pro Split AC HSU-19"
   },
   {
-   id: 45,
+    id: 45,
     name: "Haier",
     price: "Rs.237,000",
     image: "assets/img/haier ac 5.jpeg",
     description: "Haier HSU-18HJ Puri Inverter Air Conditioner"
   },
   {
-   id: 46,
+    id: 46,
     name: "Haier",
     price: "Rs.129,999",
     image: "assets/img/HAIER AC 1.jpeg",
     description: "Haier 1.5 Ton DC Inverter A/C RF Series – Model 19-RFP"
   },
   {
-   id: 47,
+    id: 47,
     name: "Haier",
     price: "Rs.61,000.00",
     image: "assets/img/led 1.jpeg",
     description: "Haier LED 50 50K85FUX"
   },
   {
-   id: 48,
+    id: 48,
     name: "Haier",
     price: "Rs.109,000.00",
     image: "assets/img/led6_clean.jpeg",
     description: "Haier LED TV 40 Inch H40K800FX (Android Google TV)"
   },
   {
-   id: 49,
+    id: 49,
     name: "Haier",
     price: "Rs.73,999.00",
     image: "assets/img/led7_clean.jpeg",
     description: "Haier LED 43 H43K800FX"
   },
   {
-   id: 50,
+    id: 50,
     name: "Haier",
-    price: "",
+    price: "Rs.101,000.00",
     image: "assets/img/led_10_clean.jpeg",
-    description: ""
+    description: "Haier LED 50 50K85FUX<"
   },
   {
-   id: 51,
+    id: 51,
     name: "Haier",
-    price: "",
+    price: "Rs.39,900.00",
     image: "assets/img/LED3_clean.jpeg",
-    description: ""
+    description: "Haier LED 32 H32D2M/MS (Miracast TV)"
   },
   {
-   id: 52,
+    id: 52,
     name: "Haier",
-    price: "",
+    price: "Rs.129,900.00",
     image: "assets/img/LED4_clean.jpeg",
-    description: ""
+    description: "Haier LED 50 H50S800UX PRO (Q LED)"
   },
   {
-   id: 53,
+    id: 53,
     name: "Haier",
-    price: "",
+    price: "Rs.84,200.00",
     image: "assets/img/tv2_no_je.jpeg",
-    description: ""
+    description: "Haier LED 43 H43K85FFX (Android Google TV)"
   },
   {
-   id: 54,
+    id: 54,
     name: "Haier",
-    price: "",
+    price: "Rs.145,200.00",
     image: "assets/img/tv1_no_je.jpeg",
-    description: ""
+    description: "Haier LED 55 H55S80EUX"
   },
+  {
+    id: 55,
+    name: "Haier",
+    price: "Rs.56,399",
+    image: "assets/img/MACHINE 7.JPEG",
+    description: "Haier HWM80-1269X 8KG Automatic Top Load Washing Machine"
+  },
+  {
+    id: 56,
+    name: "Haier",
+    price: "Rs.152,000",
+    image: "assets/img/MACHINE 2.JPEG",
+    description: "Haier 10kg Automatic Front Load Washing Machine"
+  }, {
+    id: 57,
+    name: "Haier",
+    price: "Rs.71,999",
+    image: "assets/img/MACHINE 3 .jpeg",
+    description: "Haier Automatic Washing Machine 9.5KG "
+  }, {
+    id: 58,
+    name: "Haier",
+    price: "Rs.135,000",
+    image: "assets/img/machine 6.jpeg",
+    description: "Haier HWM 85-BP12826 Automatic Washing Machine 7 KG"
+  }, {
+    id: 59,
+    name: "Haier",
+    price: "Rs.30,000",
+    image: "assets/img/MACHINE 5.JPEG",
+    description: "Haier 12Kg Semi-Automatic Washing Machine"
+  },
+  {
+    id: 60,
+    name: "Haier",
+    price: "Rs.25,499",
+    image: "assets/img/MACHINE 4.JPEG",
+    description: "Haier Single Tub Washing Machine 12KG"
+  },
+
+  { id: 61, name: "Haier", price: "Rs.230,000", image: "assets/img/MACHINE 1.JPEG", description: "Haier HWD105-B14959S8U1 Front Load Washing Machine" },
+  { id: 62, name: "Haier", price: "Rs.225,000", image: "assets/img/fridge3.jpeg", description: "Haier 22 CFT Side By Side Refrigerator HRF-578TGGIU1" },
+  { id: 63, name: "Haier", price: "Rs.105,000.00", image: "assets/img/haier fridge 2.jpeg", description: "Haier HRF-398 IAPA 398 L Inverter, Double-Door Refrigerator" },
+  { id: 64, name: "Haier", price: "Rs.94,000.00", image: "assets/img/haier fridge 3.jpeg", description: "Haier HRF-316 IAR Inverter, 316 L, Double-Door Refrigerator" },
+  { id: 65, name: "Haier", price: "Rs.107,000.00", image: "assets/img/haier fridge 4.jpeg", description: "Haier HRF-438 EPB 438 L, Double-Door Refrigerator" },
+  { id: 66, name: "Haier", price: "Rs.106,000", image: "assets/img/haier fridge 5.jpeg", description: "Haier HRF‑368IFG/IFP/IFR Large 368 L Digital Inverter Refrigerator" },
+  { id: 67, name: "Haier", price: "Rs.598,000", image: "assets/img/haier fridge 8.jpeg", description: "Haier French Door Smart Refrigerator HRF-758SIBGU1 Inverter" },
+  { id: 68, name: "Haier", price: "84,000.00", image: "assets/img/haier fridge 6.jpeg", description: "Haier HRF-316EPR 316 L, Double-Door Refrigerator" },
+  { id: 69, name: "Haier", price: "Rs.213,000", image: "assets/img/haier fridge 7.jpeg", description: "HAIER T-DOOR INVERTER REFRIGERATOR Model HRF-578TSG" },
+  { id: 70, name: "National", price: "Rs.95,300.00", image: "assets/img/national fridge.webp", description: "Refrigerator NR-6230 C.GD INV" },
+  { id: 72, name: "National", price: "Rs.78,500.00", image: "assets/img/national fridge 2.webp", description: "Refrigerator NR-522 GD" },
+  { id: 73, name: "National", price: "Rs.91,300.00", image: "assets/img/national fridge3.webp", description: "Refrigerator NR-6250 C.GD" },
+  { id: 74, name: "National", price: "Rs.59,900.00", image: "assets/img/national fridge 5.webp", description: " Refrigerator NR-150 GD" },
+  { id: 75, name: "National", price: "Rs.51,000.00", image: "assets/img/national fridge 6.webp", description: "Refrigerator NR-120" },
+  { id: 76, name: "National", price: "Rs.97,500.00", image: "assets/img/national fridge 4.webp", description: "Refrigerator NR-7140 C.GD" },
+  { id: 77, name: "National", price: "Rs.118,900.00", image: "assets/img/national fridge 10.webp", description: "Refrigerator NR-7600 C.GD" },
+  { id: 78, name: "National", price: "Rs.124,500.00", image: "assets/img/national fridge 11.webp", description: "Refrigerator NR-7600 C.GD INV" },
+  { id: 79, name: "National", price: "Rs.111,000.00", image: "assets/img/national fridge 12.webp", description: "RefrigeratorNR-7160 C.GD INV" },
+  { id: 80, name: "National", price: "Rs.84,900.00", image: "assets/img/national fridge 13.webp", description: "Refrigerator NR-522 GD INV" },
+  { id: 81, name: "National", price: "Rs.121,500.00", image: "assets/img/national fridge 13.webp", description: "Refrigerator NR-7500 C.GD INV" },
+  { id: 82, name: "National", price: "Rs.91,800.00", image: "assets/img/national fridge 14.webp", description: "Refrigerator NR-6210 C.GD INV" },
+  { id: 83, name: "Orient", price: "Rs.30,000.00", image: "assets/img/orient cooler.jpeg", description: "ORIENT ROOM COOLER Model OR-660" },
+  { id: 84, name: "Orient", price: "Rs.35,000.00", image: "assets/img/orient cooler.2jpeg.jpg", description: "ORIENT ROOM COOLER Model OR-4500 Plus" },
+  { id: 85, name: "Orient", price: "Rs.8,500.00", image: "assets/img/orient fan.jpeg", description: "Standard Deluxe 56 Ceiling Fan 220 – Pakistan’s Most Affordable High-Performance" },
+  { id: 86, name: "Orient", price: "Rs.8,800.00", image: "assets/img/orient fan 2.jpeg", description: "Stone Cream Golden 56" },
+  { id: 87, name: "Orient", price: "Rs. 10,300.00", image: "assets/img/orient fan3.jpg", description: " 12% Off image Magnum 3 Blade 56-Inch Ceiling Fan – Stylish & Energy-Efficient" },
+  { id: 88, name: "Orient", price: "Rs.9,600.00", image: "assets/img/orient fan 4.jpeg", description: "Super Deluxe White Blue 56" },
+  { id: 89, name: "Orient", price: "Rs.11,500.00", image: "assets/img/orient fan 5.jpeg", description: "Caroma Plus 56 Ceiling Fan - Cream Golden" },
+  { id: 90, name: "Orient", price: "Rs.8,800.00", image: "assets/img/orient fan 6.jpeg", description: "Grace Cream Oak 56" },
+  { id: 91, name: "Orient", price: "Rs.9,300.00", image: "assets/img/orient fan 7.jpeg", description: "Top Speed Model 56 Ceiling Fan - 220V" },
+  { id: 92, name: "Orient", price: "Rs.16,600.00", image: "assets/img/orient fan 8.jpeg", description: "Orient 24 AC/DC Pedestal Fan with 6 Blades – Pakistan’s Best Dual-Power Stand Fan" },
+  { id: 93, name: "Orient", price: "Rs.15,300.00", image: "assets/img/orient fan 9.jpeg", description: "Grand Pedestal Fan 21" },
+  { id: 94, name: "Orient", price: "Rs.9,100.00", image: "assets/img/orient fan 10.jpeg", description: "Regular Bracket Fan 18" },
+  { id: 95, name: "Orient", price: "Rs.11,200.00", image: "assets/img/orient fan 11.jpeg", description: "Mega Bracket Fan 18 - Durable & Versatile Bracket for High Load Capacity Applications" },
+  { id: 96, name: "Orient", price: "Rs.4,800.00", image: "assets/img/orient fan 12.jpeg", description: "OR-Exhaust Plastic 8" },
+  { id: 97, name: "Orient", price: "Rs.21,900.00", image: "assets/img/orient geyser.jpeg", description: "Semi Electric Geyser 20 Littre" },
+  { id: 98, name: "Orient", price: "Rs.22,900.00", image: "assets/img/orient geyser2.jpeg", description: "Semi Electric Geyser 20 Littre [DIGITAL]" },
+  { id: 99, name: "Orient", price: "Rs.25,000.00", image: "assets/img/orient geyser3.jpeg", description: "Orient Electric Geyser 36 Littre" },
+  { id: 100, name: "Orient", price: "Rs.50,000.00", image: "assets/img/orient geyser4.jpeg", description: "Orient Electric + Gas Geyser 30 Gallon" },
+  { id: 101, name: "Orient", price: "Rs.34,000.00", image: "assets/img/orient-electric-with-gas-geyser-instant-hot-water-energy-efficient-heating-solution-image-0-1727341307.jpg", description: "Orient Electric + Gas Geyser 40 Littre" }
 ];
