@@ -314,6 +314,27 @@
 
 
 }
+/* =========================
+MOBILE NAVBAR TOGGLER
+========================= */
+
+.navbar-toggler {
+background-color: transparent !important;   /* button background */
+border: none;
+padding: 8px 10px;
+border-radius: 6px;
+}
+
+/* 3 bars icon color */
+.navbar-toggler-icon {
+filter: invert(1);
+}
+
+/* Hover effect */
+.navbar-toggler:hover {
+background-color: transparent !important;
+transition: 0.3s ease;
+}
 
 .btn_contact button {
    background-color: #111111;
@@ -893,10 +914,25 @@ body {
 
  
   /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     header { padding: 14px 20px; }
     nav { display: none; }
     .blog-section { padding: 20px 20px 60px; }
     footer { grid-template-columns: 1fr; padding: 40px 20px 20px; }
     .topbar { display: none; }
-  }
+  } */
+   @media (max-width: 900px) {
+
+    .blog-section {
+        padding: 20px 20px 60px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 40px 20px 20px;
+    }
+
+    .topbar {
+        display: none;
+    }
+}
